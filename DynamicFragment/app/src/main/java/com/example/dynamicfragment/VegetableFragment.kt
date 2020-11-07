@@ -31,6 +31,8 @@ class VegetableFragment : Fragment() {
             android.R.id.text1,
             vegetablesFragment
         )
+        val name:String=arguments?.getString("KEY")?:"default"
+        fragmentView.tvView.text=name
 
         return fragmentView
     }

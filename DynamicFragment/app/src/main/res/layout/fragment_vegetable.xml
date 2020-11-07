@@ -11,5 +11,12 @@
        android:layout_height="match_parent"
        android:id="@+id/lvVegetables"
        android:padding="20dp"/>
+    <TextView
+        android:id="@+id/tvView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36dp"
+        android:text="0"
+        android:layout_gravity="center"/>
 
 </FrameLayout>

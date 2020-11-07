@@ -17,11 +17,25 @@ class MainActivity : AppCompatActivity() {
                 .replace(R.id.flFragContainer,FruitFragment())
                 .commit()
         }
+        val bundle =Bundle()
+        bundle.putString("KEY","yash")
+        val fragment1 =VegetableFragment()
+        fragment1.arguments =bundle
+
+        val viewPagerAdapter= ViewPagerAdapter(supportFragmentManager)
+        viewPagerAdapter.apply {
+            add(fragment1)
+            add(FruitFragment())
+        }
+
+        viewpager.adapter =viewPagerAdapter
+
         btnVege.setOnClickListener {
             supportFragmentManager
                 .beginTransaction()
-                .replace(R.id.flFragContainer,VegetableFragment())
+                .replace(R.id.flFragContainer,fragment1)
                 .commit()
         }
+
     }
 }
