@@ -3,6 +3,7 @@ package com.example.notifications
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.content.Context
+import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -46,6 +47,10 @@ class MainActivity : AppCompatActivity() {
                     .setPriority(NotificationCompat.PRIORITY_DEFAULT)
                     .build()
             nm.notify(1,simpleNotification)
+        }
+        btn4.setOnClickListener {
+            val intent= Intent(this, secodActivity::class.java)
+            startActivity(intent)
         }
     }
 }
