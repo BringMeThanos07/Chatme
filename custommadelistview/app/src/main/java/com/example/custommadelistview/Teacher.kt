@@ -2,7 +2,7 @@ package com.example.custommadelistview
 
 import java.util.*
 
-class Teacher(var name: String, var course: String) {
+class  Teacher(var name: String, var course: String) {
 
     companion object {
         @JvmStatic
