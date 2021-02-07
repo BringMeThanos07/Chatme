@@ -50,5 +50,7 @@ class TodoAdapter (val list: List<TodoModel>):RecyclerView.Adapter<TodoAdapter.T
     }
 
     override fun getItemCount() = list.size
-
+    override fun getItemId(position: Int): Long {
+        return list[position].id
+    }
 }
