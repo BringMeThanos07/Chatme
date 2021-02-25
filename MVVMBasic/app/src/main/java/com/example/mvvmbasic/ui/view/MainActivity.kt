@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
         vm.searchUsers(query).observe(this, Observer {
             if (!it.isNullOrEmpty()){
                 list.clear()
-                list.addAll(it)
+                list.addAll(it.filterNotNull())
                 adapter.notifyDataSetChanged()
             }
         })
