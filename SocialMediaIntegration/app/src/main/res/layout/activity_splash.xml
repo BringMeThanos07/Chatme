@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".splash">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spark Foundation"
+        android:textColor="@color/black"
+        android:textSize="36dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="55dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/download"/>
+
+
+    <Button
+        android:background="#3B5998"
+        app:backgroundTint="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:id="@+id/fb"
+        android:textAllCaps="false"
+        android:text="Sign up with Facebook"
+        android:textSize="18sp"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/google"
+        app:backgroundTint="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#cf4333"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:text="  Sign up with Google  "
+        android:textColor="#ffffff"
+         />
+
+
+
+
+</LinearLayout>
