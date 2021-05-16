@@ -77,8 +77,15 @@ class ChatActivity : AppCompatActivity() {
         listenToMessages()
 
         val emojiPopup = EmojiPopup.Builder.fromRootView(rootView).build(msgEdtv)
+
         smileBtn.setOnClickListener {
             emojiPopup.toggle()
+        }
+        pic.setOnClickListener {
+            val intent = Intent()
+            intent.action= Intent.ACTION_GET_CONTENT
+            intent.type= "image/*"
+            startActivityForResult(Intent.createChooser(intent,"Pick Image"),438)
         }
 
         swipeToLoad.setOnRefreshListener {

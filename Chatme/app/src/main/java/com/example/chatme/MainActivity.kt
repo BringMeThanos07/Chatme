@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
             when(pos){
                 0 -> tab.text= "CHATS"
                 1 -> tab.text = "PEOPLE"
+                2 -> tab.text = "NEWS"
             }
         }).attach()
     }
